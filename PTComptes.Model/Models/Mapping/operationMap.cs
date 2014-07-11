@@ -3,9 +3,9 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace PTComptes.Model.Models.Mapping
 {
-    public class operationMap : EntityTypeConfiguration<operation>
+    public class OperationMap : EntityTypeConfiguration<Operation>
     {
-        public operationMap()
+        public OperationMap()
         {
             // Primary Key
             this.HasKey(t => t.Id);
@@ -16,7 +16,7 @@ namespace PTComptes.Model.Models.Mapping
                 .HasMaxLength(200);
 
             // Table & Column Mappings
-            this.ToTable("operations");
+            this.ToTable("Operations");
             this.Property(t => t.Id).HasColumnName("Id");
             this.Property(t => t.Date).HasColumnName("Date");
             this.Property(t => t.Montant).HasColumnName("Montant");
@@ -25,11 +25,11 @@ namespace PTComptes.Model.Models.Mapping
             this.Property(t => t.TiersId).HasColumnName("TiersId");
 
             // Relationships
-            this.HasRequired(t => t.category)
-                .WithMany(t => t.operations)
+            this.HasRequired(t => t.Category)
+                .WithMany(t => t.Operations)
                 .HasForeignKey(d => d.CategorieId);
-            this.HasRequired(t => t.tier)
-                .WithMany(t => t.operations)
+            this.HasRequired(t => t.Recipient)
+                .WithMany(t => t.Operations)
                 .HasForeignKey(d => d.TiersId);
 
         }

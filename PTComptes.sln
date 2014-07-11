@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{745B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTComptes.Modules.GestionOperations", "PTComptes.Modules.GestionOperations\PTComptes.Modules.GestionOperations.csproj", "{BFB47241-971D-4616-9ADC-4D7BFCC45222}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTComptes.Modules.Entites", "PTComptes.Modules.Entites\PTComptes.Modules.Entites.csproj", "{91E22F89-DA76-4426-BD91-9AB326EACD5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTComptes.Common", "PTComptes.Common\PTComptes.Common.csproj", "{AFCD218D-756A-4FE1-A9F6-94BC762E7D1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,11 +33,20 @@ Global
 		{BFB47241-971D-4616-9ADC-4D7BFCC45222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB47241-971D-4616-9ADC-4D7BFCC45222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB47241-971D-4616-9ADC-4D7BFCC45222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E22F89-DA76-4426-BD91-9AB326EACD5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E22F89-DA76-4426-BD91-9AB326EACD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E22F89-DA76-4426-BD91-9AB326EACD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E22F89-DA76-4426-BD91-9AB326EACD5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCD218D-756A-4FE1-A9F6-94BC762E7D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCD218D-756A-4FE1-A9F6-94BC762E7D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCD218D-756A-4FE1-A9F6-94BC762E7D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCD218D-756A-4FE1-A9F6-94BC762E7D1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BFB47241-971D-4616-9ADC-4D7BFCC45222} = {745BC0D8-6094-4B2C-A906-2E89265EC2EC}
+		{91E22F89-DA76-4426-BD91-9AB326EACD5F} = {745BC0D8-6094-4B2C-A906-2E89265EC2EC}
 	EndGlobalSection
 EndGlobal

@@ -16,15 +16,15 @@ namespace PTComptes.Model.Models
         {
         }
 
-        public DbSet<category> categories { get; set; }
-        public DbSet<operation> operations { get; set; }
-        public DbSet<tier> tiers { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Operation> Operations { get; set; }
+        public DbSet<Recipient> Recipients { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Configurations.Add(new categoryMap());
-            modelBuilder.Configurations.Add(new operationMap());
-            modelBuilder.Configurations.Add(new tierMap());
+            modelBuilder.Configurations.Add(new CategoryMap());
+            modelBuilder.Configurations.Add(new OperationMap());
+            modelBuilder.Configurations.Add(new RecipientMap());
         }
     }
 }

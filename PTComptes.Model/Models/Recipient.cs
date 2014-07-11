@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace PTComptes.Model.Models
 {
-    public partial class tier
+    public partial class Recipient
     {
-        public tier()
+        public Recipient()
         {
-            this.operations = new List<operation>();
+            this.Operations = new List<Operation>();
         }
 
         public long Id { get; set; }
         public string Libelle { get; set; }
-        public virtual ICollection<operation> operations { get; set; }
+        public virtual ICollection<Operation> Operations { get; set; }
     }
 }

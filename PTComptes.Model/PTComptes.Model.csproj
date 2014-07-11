@@ -55,13 +55,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\category.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\mainContext.cs" />
-    <Compile Include="Models\Mapping\categoryMap.cs" />
-    <Compile Include="Models\Mapping\operationMap.cs" />
-    <Compile Include="Models\Mapping\tierMap.cs" />
-    <Compile Include="Models\operation.cs" />
-    <Compile Include="Models\tier.cs" />
+    <Compile Include="Models\Mapping\CategoryMap.cs" />
+    <Compile Include="Models\Mapping\OperationMap.cs" />
+    <Compile Include="Models\Mapping\RecipientMap.cs" />
+    <Compile Include="Models\Operation.cs" />
+    <Compile Include="Models\Recipient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

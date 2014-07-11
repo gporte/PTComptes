@@ -3,9 +3,9 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace PTComptes.Model.Models.Mapping
 {
-    public class tierMap : EntityTypeConfiguration<tier>
+    public class RecipientMap : EntityTypeConfiguration<Recipient>
     {
-        public tierMap()
+        public RecipientMap()
         {
             // Primary Key
             this.HasKey(t => t.Id);
@@ -17,7 +17,7 @@ namespace PTComptes.Model.Models.Mapping
                 .HasMaxLength(50);
 
             // Table & Column Mappings
-            this.ToTable("tiers");
+            this.ToTable("Recipients");
             this.Property(t => t.Id).HasColumnName("Id");
             this.Property(t => t.Libelle).HasColumnName("Libelle");
         }

@@ -3,9 +3,9 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace PTComptes.Model.Models.Mapping
 {
-    public class categoryMap : EntityTypeConfiguration<category>
+    public class CategoryMap : EntityTypeConfiguration<Category>
     {
-        public categoryMap()
+        public CategoryMap()
         {
             // Primary Key
             this.HasKey(t => t.Id);
@@ -17,7 +17,7 @@ namespace PTComptes.Model.Models.Mapping
                 .HasMaxLength(50);
 
             // Table & Column Mappings
-            this.ToTable("categories");
+            this.ToTable("Categories");
             this.Property(t => t.Id).HasColumnName("Id");
             this.Property(t => t.Libelle).HasColumnName("Libelle");
         }

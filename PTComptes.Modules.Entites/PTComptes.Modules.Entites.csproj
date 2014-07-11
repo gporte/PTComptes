@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFB47241-971D-4616-9ADC-4D7BFCC45222}</ProjectGuid>
+    <ProjectGuid>{91E22F89-DA76-4426-BD91-9AB326EACD5F}</ProjectGuid>
     <OutputType>library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PTComptes.Modules.GestionOperations</RootNamespace>
-    <AssemblyName>PTComptes.Modules.GestionOperations</AssemblyName>
+    <RootNamespace>PTComptes.Modules.Entites</RootNamespace>
+    <AssemblyName>PTComptes.Modules.Entites</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -100,6 +100,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Services\EntitesServices.cs" />
+    <Compile Include="Services\IEntitesServices.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -111,6 +113,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PTComptes.Model\PTComptes.Model.csproj">
+      <Project>{8fb25614-f90e-4c72-abe3-0ce359c5dc8f}</Project>
+      <Name>PTComptes.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
